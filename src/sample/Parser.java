@@ -81,7 +81,7 @@ public class Parser {
 
     private static void skipDescription(BufferedReader reader) throws IOException {
         String line = reader.readLine();
-        while (!line.matches("[А-я]*:")) {
+        while (!line.matches("[А-я ]*:")) {
             line = reader.readLine();
         }
     }
